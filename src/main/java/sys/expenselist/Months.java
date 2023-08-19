@@ -1,10 +1,6 @@
 package sys.expenselist;
 
-<<<<<<< HEAD
-public enum Months {
-=======
 enum Months {
->>>>>>> 4b331d2 (Initial commit)
     JANUARY(31),
     FEBRUARY(28),
     MARCH(31),
@@ -24,17 +20,6 @@ enum Months {
         this.daysInMonth = daysInMonth;
     }
 
-<<<<<<< HEAD
-    public int getDaysInMonth() {
-        return daysInMonth;
-    }
-
-    public void setDaysInMonth(int daysInMonth) {
-        this.daysInMonth = daysInMonth;
-    }
-
-    public static Months getMonth(int calendarValue) {
-=======
     int getDaysInMonth() {
         return daysInMonth;
     }
@@ -44,7 +29,6 @@ enum Months {
     }
 
     static Months getMonth(int calendarValue) {
->>>>>>> 4b331d2 (Initial commit)
         return values()[calendarValue - 1];
     }
 }

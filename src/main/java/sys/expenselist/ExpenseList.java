@@ -5,19 +5,11 @@ import java.math.MathContext;
 import java.text.NumberFormat;
 import java.util.*;
 
-<<<<<<< HEAD
-public class ExpenseList {
-    private final Map<Months, List<Expense>> expenseListMonths;
-    private final NumberFormat costFormatter = NumberFormat.getCurrencyInstance(Locale.US);
-
-    public ExpenseList() {
-=======
 class ExpenseList {
     private final Map<Months, List<Expense>> expenseListMonths;
     private final NumberFormat costFormatter = NumberFormat.getCurrencyInstance(Locale.US);
 
     protected ExpenseList() {
->>>>>>> 4b331d2 (Initial commit)
         expenseListMonths = new HashMap<>();
         initExpenseListMonths();
     }
@@ -32,19 +24,11 @@ class ExpenseList {
         return expenseListMonths.get(Months.getMonth(index));
     }
 
-<<<<<<< HEAD
-    public void addExpense(int chosenMonth, Expense newExpense) {
-        expenseListMonths.get(Months.getMonth(chosenMonth)).add(newExpense);
-    }
-
-    public String toString(int chosenMonth) {
-=======
     protected void addExpense(int chosenMonth, Expense newExpense) {
         expenseListMonths.get(Months.getMonth(chosenMonth)).add(newExpense);
     }
 
     protected String toString(int chosenMonth) {
->>>>>>> 4b331d2 (Initial commit)
         StringBuilder expensesBuilder = new StringBuilder();
         String chosenMonthAsText = turnChosenMonthNumberIntoText(chosenMonth);
 
@@ -115,11 +99,7 @@ class ExpenseList {
         return totalExpensesCost;
     }
 
-<<<<<<< HEAD
-    public String findTheBiggestExpenseInCertainMonth(int chosenMonth) {
-=======
     protected String findTheBiggestExpenseInCertainMonth(int chosenMonth) {
->>>>>>> 4b331d2 (Initial commit)
         List<Expense> certainMonthList = expenseListMonths.get(Months.getMonth(chosenMonth));
         StringBuilder expensesBuilder = new StringBuilder();
         String chosenMonthAsText = turnChosenMonthNumberIntoText(chosenMonth);

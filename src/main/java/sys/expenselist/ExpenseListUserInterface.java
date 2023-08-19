@@ -2,20 +2,12 @@ package sys.expenselist;
 
 import java.util.Scanner;
 
-<<<<<<< HEAD
-public class ExpenseListUserInterface {
-=======
 class ExpenseListUserInterface {
->>>>>>> 4b331d2 (Initial commit)
     private String userEnteredData;
     private boolean checkingResult;
     private final Scanner getDataFromUser = new Scanner(System.in);
 
-<<<<<<< HEAD
-    public ExpenseListUserInterface() {}
-=======
     protected ExpenseListUserInterface() {}
->>>>>>> 4b331d2 (Initial commit)
 
     protected String choiceMenu() {
         return """
@@ -90,11 +82,7 @@ class ExpenseListUserInterface {
         return userEnteredData.matches(monthNumberRegex) && Integer.parseInt(userEnteredData) < 13;
     }
 
-<<<<<<< HEAD
-    public ExpenseType askUserForEnterExpenseType() {
-=======
     protected ExpenseType askUserForEnterExpenseType() {
->>>>>>> 4b331d2 (Initial commit)
         System.out.printf("There are possible expense types:%n%s%nPlease enter expense type:%n", possibleTypesToChoose());;
         do {
             userEnteredData = getDataFromUser.nextLine();
@@ -134,11 +122,7 @@ class ExpenseListUserInterface {
         return result;
     }
 
-<<<<<<< HEAD
-    public String askUserForEnterExpenseName() {
-=======
     protected String askUserForEnterExpenseName() {
->>>>>>> 4b331d2 (Initial commit)
         System.out.println("Enter a expense name: ");
         do {
             userEnteredData = getDataFromUser.nextLine();
@@ -157,11 +141,7 @@ class ExpenseListUserInterface {
         return userEnteredData.matches(expenseNameRegex);
     }
 
-<<<<<<< HEAD
-    public String askUserForEnterExpenseCost() {
-=======
     protected String askUserForEnterExpenseCost() {
->>>>>>> 4b331d2 (Initial commit)
         System.out.println("Enter expense cost, number must be greater than 0: ");
         do {
             userEnteredData = getDataFromUser.nextLine();
